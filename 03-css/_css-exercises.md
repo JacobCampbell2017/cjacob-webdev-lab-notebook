@@ -1,11 +1,12 @@
 # CSS Exercises
 
-- [Exercise 01 - Selectors](#ex01)
-- [Exercise 02 - Pseudo](#ex02)
-- [Exercise 03 - Specificity](#ex03)
-- [Exercise 04 - Layout](#ex04)
-- [Exercise 05 - Position](#ex05)
-- [Exercise 06 - Media Queries](#ex06)
+- [CSS Exercises](#css-exercises)
+  - [ Exercise 01 - Selectors](#-exercise-01---selectors)
+  - [ Exercise 02 - Pseudo](#-exercise-02---pseudo)
+  - [ Exercise 03 - Specificity](#-exercise-03---specificity)
+  - [ Exercise 04 - Layout](#-exercise-04---layout)
+  - [ Exercise 05 - Position](#-exercise-05---position)
+  - [ Exercise 06 - Media Queries](#-exercise-06---media-queries)
 
 ## <a id="ex01"></a> Exercise 01 - Selectors
 
@@ -26,21 +27,24 @@ Calculate the specificity of the rules below.
 ```css
 nav .list-item > a {
 }
+0,1,2
 
 #main::first-letter {
 }
+1,0,1
 
 input[type] {
 }
-
+0,1,1
 section .main::first-line {
 }
-
+0,1,2
 nav ul.menu li#first a:not([class='visited']) {
 }
-
+1,2,4
 div ol li ul li ol li ul li a {
 }
+0,0,10
 ```
 
 ## <a id="ex04"></a> Exercise 04 - Layout

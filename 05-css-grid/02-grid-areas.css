@@ -6,6 +6,7 @@
   grid-area: article;
 }
 
+/* edited to add multiple layouts to easier see the changes */
 .grid-container {
   display: grid;
   height: 97vh;
@@ -13,12 +14,78 @@
   grid-template-rows: repeat(8, 1fr);
   gap: 10px;
   grid-template-areas:
-    'header'
-    'article'
-    'article'
-    'section'
-    'section'
-    'section'
-    'aside'
-    'footer';
+    "header"
+    "article"
+    "article"
+    "section"
+    "section"
+    "section"
+    "aside"
+    "footer";
+  width: 80%;
+  padding: 40px;
+}
+
+/* First Layout */
+.article-1 {
+  justify-self: end;
+  grid-row: 2 / 6;
+  width: 60%;
+}
+
+.aside-1 {
+  grid-area: article;
+  grid-row: 2 / 6;
+  width: 39%;
+}
+
+.section-1 {
+  grid-row: 6 / 8;
+}
+.footer-1 {
+  grid-area: footer;
+}
+
+/* Second Layout */
+
+.article-2 {
+  grid-area: article;
+  grid-row: 2 / 6;
+  width: 70%;
+}
+
+.aside-2 {
+  justify-self: end;
+  grid-area: aside;
+  grid-row: 2 / 6;
+  width: 29%;
+}
+
+.section-2 {
+  grid-row: 6 / 8;
+}
+
+.footer-2 {
+  grid-area: footer;
+}
+
+/* Third Layout */
+.header-3 {
+  grid-area: header;
+}
+
+.article-3 {
+  grid-area: article;
+}
+
+.aside-3 {
+  grid-area: aside;
+}
+
+.section-3 {
+  grid-area: section;
+}
+
+.footer-3 {
+  grid-area: footer;
 }

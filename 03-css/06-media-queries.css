@@ -4,3 +4,34 @@
     color: var(--white);
   }
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--black);
+  color: var(--white);
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a[href="#"] {
+  text-decoration: none;
+  color: var(--white);
+}
+
+section[class="main"] {
+  margin-top: 50px;
+  padding: 20px;
+  max-width: 50%;
+}
+
+h3 {
+  font-size: 30px;
+}
